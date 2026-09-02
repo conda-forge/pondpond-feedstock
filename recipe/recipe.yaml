@@ -31,7 +31,9 @@ tests:
       imports:
         - pond
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Pond is a high performance object-pooling library for Python.
